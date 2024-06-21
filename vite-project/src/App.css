@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar {
@@ -9,7 +10,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #004080; /* Dark blue background */
-  padding: 10px 20px;
+  padding: 20px 20px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -326,5 +327,320 @@ body {
 
   .examination-card {
     margin: 10px 0;
+  }
+}
+.slider-container {
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.card {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  
+  width: 300px !important;
+  height: 150px !important;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.card a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: bold;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.slick-dots li button:before {
+  color: white;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+}
+
+/* Ensure cards are not attached to each other */
+.slick-slide {
+  padding: 0 10px;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    margin: 0 5px;
+  }
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 20px 0 20px; /* Adjusted padding to reduce top space */
+  background-color: #f5f5f5;
+}
+
+.counter-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 200px; /* Responsive width */
+  max-width: 300px;
+  height: 200px;
+  text-align: center;
+}
+
+.counter-box h3 {
+  font-size: 1.2em;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.counter-box h2 {
+  font-size: 2.5em;
+  color: #003366;
+  margin: 10px 0;
+}
+
+.counter-box p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .counter-container {
+    flex-direction: column;
+  }
+
+  .counter-box {
+    margin: 10px auto;
+  }
+}
+.faq-container {
+  width: 60%;
+  margin: auto;
+}
+
+.faq-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.faq-item:first-child {
+  border-top: none;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.faq-answer {
+  padding: 10px 0;
+  color: #555;
+}
+
+.faq-question i {
+  color: #007BFF;
+  font-size: 1.2em;
+}
+
+.subscribe-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 1000px;
+  flex-wrap: wrap; /* Ensure wrapping on small screens */
+}
+
+.subscribe-text {
+  flex: 1;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.subscribe-text h3 {
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.subscribe-text p {
+  color: #7f8c8d;
+  margin: 10px 0;
+}
+
+.subscribe-input {
+  display: flex;
+  flex-direction: row; /* Ensure input and button are side by side */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.subscribe-input input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.subscribe-input button {
+  padding: 10px 20px;
+  background-color: #004080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-input button i {
+  margin-left: 5px;
+}
+
+.subscribe-animation {
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .subscribe-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .subscribe-text {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .subscribe-input {
+    flex-direction: column; /* Stack input and button on top of each other */
+  }
+
+  .subscribe-input input {
+    margin-right: 0;
+    margin-bottom: 10px; /* Add space between input and button */
+  }
+
+  .subscribe-animation {
+    width: 100%;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #004080;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.footer-bottom a {
+  color: #4da6ff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
   }
 }

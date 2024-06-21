@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "../App.css"
-import slide1 from '../assets/slide1.jpg'; // Replace with your image path
-import slide2 from '../assets/slide2.jpg'; // Replace with your image path
+import slide1 from '../assets/slide1.jpg'; 
+import slide2 from '../assets/slide2.jpg'; 
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
